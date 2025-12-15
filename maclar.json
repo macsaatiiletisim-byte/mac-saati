@@ -1,0 +1,578 @@
+[
+    {
+        "id": 1,
+        "lig": "SİSTEM MESAJI",
+        "ligTuru": "tr",
+        "tarih": "2020-01-01",
+        "saat": "00:00",
+        "evSahibi": "Sistem",
+        "deplasman": "Test",
+        "kanal": "-",
+        "durum": "sifresiz"
+    }
+
+,
+{
+    "id": 102138,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-15",
+    "saat": "20:00",
+    "evSahibi": "Fenerbahçe",
+    "deplasman": "Konyaspor",
+    "kanal": "BeIN Sports 1",
+    "durum": "sifreli"
+},
+{
+    "id": 104124,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-19",
+    "saat": "20:00",
+    "evSahibi": "Kocaelispor",
+    "deplasman": "Antalyaspor",
+    "kanal": "BeIN Sports 1",
+    "durum": "sifreli"
+},
+{
+    "id": 447371,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-20",
+    "saat": "14:30",
+    "evSahibi": "Konyaspor",
+    "deplasman": "Kayserispor",
+    "kanal": "BeIN Sports 1",
+    "durum": "sifreli"
+},
+{
+    "id": 848240,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-20",
+    "saat": "17:00",
+    "evSahibi": "Eyüpspor",
+    "deplasman": "Fenerbahçe",
+    "kanal": "BeIN Sports 1",
+    "durum": "sifreli"
+},
+{
+    "id": 983330,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-20",
+    "saat": "20:00",
+    "evSahibi": "Beşiktaş",
+    "deplasman": "Rizespor",
+    "kanal": "BeIN Sports 1",
+    "durum": "sifreli"
+},
+{
+    "id": 664321,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-21",
+    "saat": "14:30",
+    "evSahibi": "Alanyaspor",
+    "deplasman": "Karagümrük",
+    "kanal": "BeIN Sports 1",
+    "durum": "sifreli"
+},
+{
+    "id": 435939,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-21",
+    "saat": "17:00",
+    "evSahibi": "Başakşehir",
+    "deplasman": "Gaziantep FK",
+    "kanal": "BeIN Sports 1",
+    "durum": "sifreli"
+},
+{
+    "id": 638970,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-21",
+    "saat": "20:00",
+    "evSahibi": "Göztepe",
+    "deplasman": "Samsunspor",
+    "kanal": "BeIN Sports 3",
+    "durum": "sifreli"
+},
+{
+    "id": 577505,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-21",
+    "saat": "20:00",
+    "evSahibi": "Galatasaray",
+    "deplasman": "Kasımpaşa",
+    "kanal": "BeIN Sports 1",
+    "durum": "sifreli"
+},
+{
+    "id": 652638,
+    "lig": "Trendyol Süper Lig",
+    "ligTuru": "tr",
+    "tarih": "2025-12-21",
+    "saat": "20:00",
+    "evSahibi": "Gençlerbirliği",
+    "deplasman": "Trabzonspor",
+    "kanal": "BeIN Sports 2",
+    "durum": "sifreli"
+}
+
+,
+{
+    "id": 489704,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-15",
+    "saat": "23:00",
+    "evSahibi": "Manchester United FC",
+    "deplasman": "Bournemouth",
+    "kanal": "BeIN Sports 3",
+    "durum": "sifreli"
+}
+,
+{
+    "id": 191276,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-20",
+    "saat": "05:30",
+    "evSahibi": "Newcastle United FC",
+    "deplasman": "Chelsea",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+},
+{
+    "id": 747396,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-20",
+    "saat": "18:00",
+    "evSahibi": "Bournemouth",
+    "deplasman": "Burnley",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+},
+{
+    "id": 224071,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-20",
+    "saat": "18:00",
+    "evSahibi": "Brighton",
+    "deplasman": "Sunderland",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+},
+{
+    "id": 393839,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-20",
+    "saat": "18:00",
+    "evSahibi": "Manchester City FC",
+    "deplasman": "West Ham United FC",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+},
+{
+    "id": 817491,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-20",
+    "saat": "18:00",
+    "evSahibi": "Wolverhampton Wanderers FC",
+    "deplasman": "Brentford",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+},
+{
+    "id": 540626,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-20",
+    "saat": "20:30",
+    "evSahibi": "Tottenham",
+    "deplasman": "Liverpool",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+},
+{
+    "id": 41085,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-20",
+    "saat": "23:00",
+    "evSahibi": "Leesds United",
+    "deplasman": "Crystal Palace",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+},
+{
+    "id": 673163,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-20",
+    "saat": "23:00",
+    "evSahibi": "Everton",
+    "deplasman": "Arsenal",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+},
+{
+    "id": 571050,
+    "lig": "İngiltere Premier Lig",
+    "ligTuru": "eng",
+    "tarih": "2025-12-21",
+    "saat": "19:30",
+    "evSahibi": "Aston Villa",
+    "deplasman": "Manchester United FC",
+    "kanal": "Bein Sports beIN Connect",
+    "durum": "sifreli"
+}
+
+,
+{
+    "id": 481344,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-14",
+    "saat": "23:00",
+    "evSahibi": "Alavés",
+    "deplasman": "Real Madrid",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+
+
+    "id": 725199,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-15",
+    "saat": "23:00",
+    "evSahibi": "Rayo Vallecano",
+    "deplasman": "Real Betis",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 133454,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-19",
+    "saat": "23:00",
+    "evSahibi": "Valencia CF ",
+    "deplasman": "Mallorco ",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 534610,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-20",
+    "saat": "06:00",
+    "evSahibi": "Real Oviedo",
+    "deplasman": "Celta Vigo",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 354869,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-20",
+    "saat": "18:15",
+    "evSahibi": "Levante UD",
+    "deplasman": " Real Sociedad",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 332425,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-20",
+    "saat": "20:30",
+    "evSahibi": "CA Osasuna ",
+    "deplasman": "Deportivo Alavés",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 731762,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-20",
+    "saat": "23:00",
+    "evSahibi": "Real Madrid",
+    "deplasman": "Sevilla FC",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 679698,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-21",
+    "saat": "23:00",
+    "evSahibi": "Girona FC",
+    "deplasman": "Atlético Madrid",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 527750,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-21",
+    "saat": "18:15",
+    "evSahibi": "Villarreal",
+    "deplasman": "Barcelona",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 694002,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-21",
+    "saat": "20:30",
+    "evSahibi": "Elche CF",
+    "deplasman": "Rayo Vallecano",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 455724,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-21",
+    "saat": "23:00",
+    "evSahibi": "Real Betis",
+    "deplasman": "Getafe CF",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+},
+{
+    "id": 602611,
+    "lig": "İspanya LaLiga",
+    "ligTuru": "esp",
+    "tarih": "2025-12-22",
+    "saat": "23:00",
+    "evSahibi": "Athletic Bilbao",
+    "deplasman": "RCD Espanyol ",
+    "kanal": "S Sport",
+    "durum": "sifreli"
+}
+
+,
+{
+    "id": 96005,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-19",
+    "saat": "22:30",
+    "evSahibi": "Borussia Dortmund",
+    "deplasman": "Borussia Mönchenglad",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 774453,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-20",
+    "saat": "17:30",
+    "evSahibi": "Wolsburg",
+    "deplasman": "Freiburg",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 521440,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-20",
+    "saat": "17:30",
+    "evSahibi": "Stuttgart",
+    "deplasman": "Hoffenheim",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 534935,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-20",
+    "saat": "17:30",
+    "evSahibi": "Hamburg",
+    "deplasman": "Eintracht Frankfurt",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 503679,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-20",
+    "saat": "17:30",
+    "evSahibi": "Köln",
+    "deplasman": "Union Berlin",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 659589,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-20",
+    "saat": "17:30",
+    "evSahibi": "Augsburg",
+    "deplasman": "Werder Bremen",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 21699,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-20",
+    "saat": "20:30",
+    "evSahibi": "RB Leipzig",
+    "deplasman": "Leverkusen",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 158392,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-21",
+    "saat": "17:30",
+    "evSahibi": "Mainz 05",
+    "deplasman": "FC St. Pauli",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 932938,
+    "lig": "Almanya Bundesliga",
+    "ligTuru": "ger",
+    "tarih": "2025-12-21",
+    "saat": "19:30",
+    "evSahibi": "Heidenheim",
+    "deplasman": "Bayern Münih",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+}
+
+,
+{
+    "id": 54217,
+    "lig": "İtalya Serie A",
+    "ligTuru": "ita",
+    "tarih": "2025-12-15",
+    "saat": "22:45",
+    "evSahibi": "AS Roma",
+    "deplasman": "Como 1907",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 841196,
+    "lig": "İtalya Serie A",
+    "ligTuru": "ita",
+    "tarih": "2025-12-20",
+    "saat": "20:00",
+    "evSahibi": "SS Lazio",
+    "deplasman": "US Cremonese",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 996406,
+    "lig": "İtalya Serie A",
+    "ligTuru": "ita",
+    "tarih": "2025-12-20",
+    "saat": "22:45",
+    "evSahibi": "Juventus FC",
+    "deplasman": "AS Roma",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 696725,
+    "lig": "İtalya Serie A",
+    "ligTuru": "ita",
+    "tarih": "2025-12-21",
+    "saat": "14:30",
+    "evSahibi": "Cagliari Calcio",
+    "deplasman": "Pisa SC",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 725917,
+    "lig": "İtalya Serie A",
+    "ligTuru": "ita",
+    "tarih": "2025-12-21",
+    "saat": "17:00",
+    "evSahibi": "US Sassuolo Calcio",
+    "deplasman": "Torino FC",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 287932,
+    "lig": "İtalya Serie A",
+    "ligTuru": "ita",
+    "tarih": "2025-12-21",
+    "saat": "20:00",
+    "evSahibi": "ACF Fiorentina",
+    "deplasman": "Udinese Calcio",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+},
+{
+    "id": 739483,
+    "lig": "İtalya Serie A",
+    "ligTuru": "ita",
+    "tarih": "2025-12-21",
+    "saat": "22:45",
+    "evSahibi": "Genoa CFC",
+    "deplasman": "Atalanta BC",
+    "kanal": "S Sport Plus",
+    "durum": "sifreli"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

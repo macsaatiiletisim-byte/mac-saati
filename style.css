@@ -1,0 +1,234 @@
+/* --- 1. TEMEL DEĞİŞKENLER VE RENKLER --- */
+:root {
+    --bg-body: #f4f6f8;
+    --bg-nav: #ffffff;
+    --text-main: #2d3436;
+    --text-muted: #636e72;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 15px rgba(0,0,0,0.05);
+    
+    /* LİG RENKLERİ */
+    --super-lig: #d63031;
+    --premier: #6c5ce7;
+    --laliga: #f1c40f;
+    --bundesliga: #e17055;
+    --seriea: #00b894;
+    --ligue1: #0984e3;
+    --ucl: #2e86de; 
+    --uel: #ff9f43; 
+    --uecl: #1dd1a1; 
+    --world: #636e72;
+
+    --line-gradient: linear-gradient(90deg, transparent, rgba(0,0,0,0.4), transparent);
+}
+
+.dark-mode {
+    --bg-body: #121212;
+    --bg-nav: #1e1e1e;
+    --text-main: #dfe6e9;
+    --text-muted: #b2bec3;
+    --card-bg: #1e1e1e;
+    --shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    --ucl: #54a0ff; 
+    --uel: #feca57; 
+    --uecl: #55efc4; 
+
+    --line-gradient: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+}
+
+/* --- 2. GENEL AYARLAR --- */
+* { box-sizing: border-box; margin: 0; padding: 0; transition: all 0.3s ease; }
+body { background-color: var(--bg-body); color: var(--text-main); font-family: 'Inter', sans-serif; padding-bottom: 50px; }
+
+/* --- 3. NAVBAR --- */
+.navbar { background-color: var(--bg-nav); box-shadow: var(--shadow); padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+.nav-content { max-width: 700px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+.highlight { color: #0984e3; }
+.nav-right { display: flex; gap: 10px; align-items: center; }
+.date-indicator { font-size: 13px; font-weight: 600; background: rgba(0,0,0,0.05); padding: 6px 12px; border-radius: 20px; color: var(--text-muted); }
+.dark-mode .date-indicator { background: rgba(255,255,255,0.1); color: #dfe6e9; }
+.theme-btn { background: none; border: 1px solid var(--text-muted); color: var(--text-main); border-radius: 50%; width: 35px; height: 35px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+
+/* --- 4. İÇERİK ALANI --- */
+.container { max-width: 700px; margin: 20px auto; padding: 0 20px; }
+.ad-space { background: #e0e0e0; color: #999; text-align: center; padding: 15px; margin: 20px 0; border-radius: 8px; font-size: 11px; border: 1px dashed #ccc; letter-spacing: 1px; }
+.dark-mode .ad-space { background: #2d3436; border-color: #444; }
+
+/* Sabit Mavi Bilgi Kutusu */
+.info-box { background: #e3f2fd; border-left: 5px solid #2196f3; padding: 15px; border-radius: 6px; box-shadow: var(--shadow); margin-bottom: 25px; display: flex; gap: 10px; align-items: start; }
+.dark-mode .info-box { background: #2c3e50; border-left-color: #3498db; color: #ecf0f1; }
+
+/* LİG BAŞLIKLARI */
+.league-header { margin-top: 35px; margin-bottom: 12px; padding-left: 12px; border-left: 5px solid #ccc; display: flex; align-items: center; }
+.league-header h3 { font-family: 'Oswald', sans-serif; font-size: 17px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* Dinamik Lig Notu Kutusu (Admin Panelden Gelen) */
+.league-info-box { background-color: #e3f2fd; border-left: 5px solid #2196f3; padding: 15px; margin-bottom: 20px; border-radius: 8px; color: #0d47a1; font-size: 14px; line-height: 1.6; font-weight: 500; box-shadow: 0 4px 6px rgba(0,0,0,0.02); display: flex; align-items: center; gap: 12px; }
+.league-info-box::before { content: "📢"; font-size: 18px; }
+.dark-mode .league-info-box { background-color: #2c3e50; border-left-color: #3498db; color: #ecf0f1; }
+
+.tr-league { border-color: var(--super-lig); color: var(--super-lig); }
+.eng-league { border-color: var(--premier); color: var(--premier); }
+.esp-league { border-color: var(--laliga); color: var(--laliga); }
+.ger-league { border-color: var(--bundesliga); color: var(--bundesliga); }
+.ita-league { border-color: var(--seriea); color: var(--seriea); }
+.fra-league { border-color: var(--ligue1); color: var(--ligue1); }
+.ucl-league { border-color: var(--ucl); color: var(--ucl); }   
+.uel-league { border-color: var(--uel); color: var(--uel); }   
+.uecl-league { border-color: var(--uecl); color: var(--uecl); }
+.world-league { border-color: var(--world); color: var(--world); }
+
+/* --- 5. MAÇ KARTI TASARIMI --- */
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.match-card { background: var(--card-bg); border-radius: 12px; box-shadow: var(--shadow); display: flex; overflow: hidden; margin-bottom: 15px; border: 1px solid rgba(0,0,0,0.03); animation: slideUp 0.5s ease forwards; }
+.dark-mode .match-card { border-color: rgba(255,255,255,0.05); }
+.match-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+
+/* Saat ve Gün Kutusu */
+.time-box { background: rgba(0,0,0,0.02); padding: 0 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; min-width: 95px; border-right: 1px solid rgba(0,0,0,0.05); }
+.dark-mode .time-box { background: rgba(255,255,255,0.03); }
+.hour { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; color: var(--text-main); line-height: 1; }
+.date-numeric { font-size: 13px; color: var(--text-muted); font-weight: 600; margin-top: 4px; margin-bottom: 2px; }
+.day { font-size: 13px; text-transform: uppercase; font-weight: 800; letter-spacing: 0.5px; line-height: 1.2; }
+
+.match-info { flex-grow: 1; padding: 15px 20px; display: flex; flex-direction: column; justify-content: center; }
+
+/* Takım İsimleri */
+.teams-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 17px; font-weight: 700; margin-bottom: 12px; color: var(--text-main); }
+.team-name { flex: 1; width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.home { text-align: right; }
+.away { text-align: left; }
+
+.vs-badge { font-size: 12px; background: rgba(0,0,0,0.05); color: var(--text-muted); padding: 4px 8px; border-radius: 6px; font-weight: 600; flex-shrink: 0; }
+.dark-mode .vs-badge { background: rgba(255,255,255,0.1); color: #dfe6e9; }
+
+.channel-wrapper { position: relative; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 13px; padding-top: 15px; margin-top: 5px; }
+.channel-wrapper::before { content: ""; position: absolute; top: 0; left: 5%; width: 90%; height: 1px; background: var(--line-gradient); }
+.channel-name { font-weight: 600; color: var(--text-muted); display: flex; align-items: center; gap: 6px; }
+
+.badge { font-size: 10px; padding: 4px 8px; border-radius: 6px; font-weight: 700; letter-spacing: 0.3px; }
+.encrypted { background: rgba(255, 118, 117, 0.15); color: #d63031; }
+.free { background: rgba(85, 239, 196, 0.15); color: #00b894; }
+
+/* --- 6. ALT SAYFALAR --- */
+.page-content { background-color: var(--card-bg); border-radius: 12px; padding: 40px; box-shadow: var(--shadow); margin-top: 20px; }
+.page-content h2 { font-family: 'Oswald', sans-serif; color: var(--text-main); margin-bottom: 25px; font-size: 24px; text-transform: uppercase; }
+.page-content p { line-height: 1.8; color: var(--text-main); margin-bottom: 20px; font-size: 15px; }
+.back-container { margin-bottom: 30px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 20px; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; background-color: #f8f9fa; color: #2d3436; padding: 10px 24px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; border: 1px solid rgba(0,0,0,0.08); transition: all 0.3s; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+.back-btn:hover { background-color: #0984e3; color: white; border-color: #0984e3; transform: translateX(-5px); }
+.dark-mode .back-container { border-color: rgba(255,255,255,0.05); }
+.dark-mode .back-btn { background-color: #2d3436; color: #dfe6e9; border-color: rgba(255,255,255,0.1); }
+.dark-mode .back-btn:hover { background-color: #0984e3; color: white; }
+
+/* --- 7. FOOTER --- */
+footer { text-align: center; margin-top: 50px; font-size: 12px; color: var(--text-muted); opacity: 0.8; }
+.footer-menu { margin: 20px 0; }
+.footer-menu a { color: var(--text-muted); text-decoration: none; margin: 0 10px; font-weight: 600; font-size: 13px; transition: color 0.3s; }
+.footer-menu a:hover { color: #0984e3; }
+
+/* --- 🔥 LİGLERİN NABZI (GÜNCELLENDİ: ALT ALTA VERSİYON) 🔥 --- */
+.league-pulse-container { 
+    margin-bottom: 30px; 
+}
+
+.pulse-title { 
+    font-family: 'Oswald', sans-serif; 
+    font-size: 18px; 
+    color: var(--text-main); 
+    margin-bottom: 15px; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.pulse-title::after { 
+    content: ""; 
+    flex: 1; 
+    height: 1px; 
+    background: var(--line-gradient); 
+    opacity: 0.3; 
+}
+
+/* YENİ GRİD YAPISI: ALT ALTA */
+.pulse-grid { 
+    display: flex; 
+    flex-direction: column; /* Kutuları alt alta dizer */
+    gap: 15px; 
+}
+
+/* KART TASARIMI: GENİŞ VE FERAH */
+.pulse-card { 
+    width: 100%; /* Tam genişlik */
+    background: var(--card-bg); 
+    border-radius: 10px; 
+    padding: 20px; /* İç boşluğu biraz artırdık */
+    box-shadow: var(--shadow); 
+    border: 1px solid rgba(0,0,0,0.05); 
+}
+
+.dark-mode .pulse-card { 
+    border-color: rgba(255,255,255,0.05); 
+}
+
+/* KART BAŞLIKLARI */
+.pulse-header { 
+    font-weight: 800; 
+    font-size: 14px; 
+    margin-bottom: 8px; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pulse-card p { 
+    font-size: 13px; 
+    color: var(--text-muted); 
+    line-height: 1.6; 
+}
+
+/* --- 🔥 LİG RENKLERİ VE KART TASARIMLARI (TÜM LİGLER) 🔥 --- */
+
+/* 1. TÜRKİYE (Kırmızı) */
+.tr-pulse { border-left: 5px solid #d63031; } 
+.tr-pulse .pulse-header { color: #d63031; }
+
+/* 2. İNGİLTERE (Mor) */
+.eng-pulse { border-left: 5px solid #6c5ce7; } 
+.eng-pulse .pulse-header { color: #6c5ce7; }
+
+/* 3. İSPANYA (Sarı/Turuncu) */
+.esp-pulse { border-left: 5px solid #f1c40f; } 
+.esp-pulse .pulse-header { color: #f5b041; }
+
+/* 4. ALMANYA (Koyu Turuncu) - EKSİK OLAN BUYDU */
+.ger-pulse { border-left: 5px solid #e17055; } 
+.ger-pulse .pulse-header { color: #e17055; }
+
+/* 5. İTALYA (Yeşil) - EKSİK OLAN BUYDU */
+.ita-pulse { border-left: 5px solid #00b894; } 
+.ita-pulse .pulse-header { color: #00b894; }
+
+/* 6. FRANSA (Mavi) */
+.fra-pulse { border-left: 5px solid #0984e3; } 
+.fra-pulse .pulse-header { color: #0984e3; }
+
+/* 7. ŞAMPİYONLAR LİGİ (Koyu Mavi) */
+.ucl-pulse { border-left: 5px solid #2e86de; } 
+.ucl-pulse .pulse-header { color: #2e86de; }
+
+/* 8. AVRUPA LİGİ (Turuncu) */
+.uel-pulse { border-left: 5px solid #ff9f43; } 
+.uel-pulse .pulse-header { color: #ff9f43; }
+
+/* 9. KONFERANS LİGİ (Yeşil) */
+.uecl-pulse { border-left: 5px solid #1dd1a1; } 
+.uecl-pulse .pulse-header { color: #1dd1a1; }
+
+/* 10. MİLLİ MAÇLAR / DÜNYA (Gri) */
+.world-pulse { border-left: 5px solid #636e72; } 
+.world-pulse .pulse-header { color: #636e72; }

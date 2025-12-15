@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasal Uyarı | Maç Saati</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Bu sayfaya özel temiz stil ayarları */
+        .page-content {
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        
+        /* Breadcrumb (Geri Dönüş Yolu) Tasarımı */
+        .breadcrumb {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 25px;
+            font-weight: 500;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #636e72; /* Koyu Gri */
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .breadcrumb a:hover {
+            color: #0984e3; /* Mavi */
+        }
+        .breadcrumb span {
+            margin: 0 8px;
+            color: #ccc;
+        }
+
+        /* Metin Düzeni */
+        h2 { font-family: 'Oswald', sans-serif; color: #d63031; margin-bottom: 20px; }
+        p { line-height: 1.6; color: #2d3436; margin-bottom: 15px; font-size: 14px; }
+        
+        /* Karanlık Mod Uyumu */
+        body.dark-mode .page-content { background-color: #1e1e1e; }
+        body.dark-mode p { color: #b2bec3; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration:none; color:inherit;">
+                    MAÇ<span class="highlight">SAATİ</span>
+                </a>
+            </div>
+            <button id="theme-toggle" class="theme-btn" style="border:1px solid #ccc;">🌙</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-content">
+            
+            <div class="back-container">
+               <a href="index.html" class="back-btn">
+                  <span>←</span> Ana Sayfaya Dön
+              </a>
+             </div>
+
+            <h2>YASAL UYARI</h2>
+            
+            <p><strong>Lütfen Dikkatle Okuyunuz:</strong></p>
+            
+            <p><strong>1. Yayın Hizmeti Yoktur:</strong><br>
+            Maç Saati (macsaati.xyz), hiçbir şekilde canlı maç yayını, video akışı veya IPTV hizmeti <u>sunmamaktadır.</u> Sitemiz üzerinden herhangi bir maç izlenemez.</p>
+            
+            <p><strong>2. Sadece Bilgi Amaçlıdır:</strong><br>
+            Sitemizin tek amacı; sporseverlere karşılaşmaların tarihini, başlama saatini ve maçı yayınlayan lisanslı yayıncı kuruluşun (TV kanalı veya dijital platform) ismini bildirmektir. Bir "TV Rehberi" niteliğindedir.</p>
+            
+            <p><strong>3. Telif Hakları:</strong><br>
+            Sitemizde kaçak yayın linkleri, illegal izleme yöntemleri veya telif hakkı ihlali oluşturan içerikler kesinlikle barındırılmaz ve paylaşılmaz. Kullanıcılarımızı maçları izlemeleri için her zaman resmi yayıncı kuruluşlara (BeIN Sports, Exxen, S Sport, D-Smart vb.) abone olmaya teşvik etmekteyiz.</p>
+            
+            <p><strong>4. Veri Kaynağı:</strong><br>
+            Sitedeki bilgiler yayıncı kuruluşların kamuya açık web sitelerinden ve federasyonların (TFF, UEFA) resmi sayfalarından derlenmektedir. Yayın akışındaki son dakika değişikliklerinden sitemiz sorumlu tutulamaz.</p>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">Maç Saati &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
