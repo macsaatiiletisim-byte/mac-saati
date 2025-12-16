@@ -319,3 +319,28 @@ body.dark-mode h2 {
         text-align: center;
     }
 }
+/* --- SAAT KUTUSU AYARI (Cücük Gibi Kalmasın) --- */
+.time-box {
+    min-width: 95px !important; /* Genişlik en az bu kadar olsun */
+    width: 95px !important;     /* Sabit genişlik */
+    flex-shrink: 0 !important;  /* Asla sıkışma, küçülme */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;        /* Çizgiyle araya mesafe */
+    border-right: 1px solid rgba(0,0,0,0.1); /* Ayrım çizgisi */
+}
+
+/* Mobilde yazıların ortalanması için */
+@media (max-width: 768px) {
+    .match-card {
+        display: flex;
+        flex-direction: row; /* Yan yana durmaya zorla */
+        align-items: center; /* Dikeyde ortala */
+    }
+    
+    .match-info {
+        padding-left: 15px; /* Saat kutusuyla takım arasına boşluk */
+    }
+}
