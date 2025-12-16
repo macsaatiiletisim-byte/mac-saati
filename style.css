@@ -232,3 +232,90 @@ footer { text-align: center; margin-top: 50px; font-size: 12px; color: var(--tex
 /* 10. MİLLİ MAÇLAR / DÜNYA (Gri) */
 .world-pulse { border-left: 5px solid #636e72; } 
 .world-pulse .pulse-header { color: #636e72; }
+
+/* --- MOBİL AYARLAR (GÜNCELLENDİ V2) --- */
+
+/* 1. Footer'ı En Alta Sabitleme */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    flex: 1;
+}
+
+/* --- 🛠️ FİNAL DÜZELTMELERİ (MOBİL + KARANLIK MOD) 🛠️ --- */
+
+/* 1. Footer'ı En Alta Sabitleme */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    flex: 1;
+}
+
+/* 2. İLETİŞİM SAYFASI BAŞLIK RENGİ (Karanlık Mod Sorunu Çözümü) */
+.contact-container h2, 
+.contact-header h2,
+h2 {
+    color: var(--text-main); /* Temaya göre renk al */
+    font-weight: 900 !important;
+}
+
+/* Karanlık Modda Başlıkları ZORLA Beyaz Yap */
+body.dark-mode .contact-container h2,
+body.dark-mode h2 {
+    color: #ffffff !important;
+}
+
+/* 3. MOBİL AYARLAR (Takım İsimleri Kesilmesin!) */
+@media (max-width: 768px) {
+    
+    /* Kartın boyu esnek olsun, yazı uzarsa kart da uzasın */
+    .match-card {
+        height: auto !important; 
+        padding: 15px 10px;
+        align-items: flex-start; /* Her şeyi yukarı hizala */
+    }
+
+    /* Takım İsimleri Kutusu */
+    .teams-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Takımları alt alta veya serbest bırak */
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* İSİM KESİLME SORUNU BURADA ÇÖZÜLÜYOR */
+    .team-name {
+        white-space: normal !important; /* Asla tek satıra zorlama, aşağı kay */
+        overflow: visible !important; /* Taşanı gizleme */
+        text-overflow: clip !important; /* Nokta (...) koymayı yasakla */
+        word-wrap: break-word !important; /* Uzun kelimeyi böl */
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+        text-align: center;
+        margin: 3px 0;
+        width: 100%; /* Genişliğe yayıl */
+    }
+    
+    /* VS yazısını biraz küçültelim */
+    .vs-badge {
+        margin: 5px 0;
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    /* Kanal ve Şifre Bilgisi */
+    .channel-wrapper {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
