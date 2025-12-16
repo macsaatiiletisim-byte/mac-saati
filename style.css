@@ -319,28 +319,83 @@ body.dark-mode h2 {
         text-align: center;
     }
 }
-/* --- SAAT KUTUSU AYARI (Cücük Gibi Kalmasın) --- */
+/* --- 🛑 KESİN ÇÖZÜM: SAAT KUTUSU VE YERLEŞİM --- */
+
+/* Kartın kendisi: İçindekileri yan yana tutmaya zorla */
+.match-card {
+    display: flex !important;
+    flex-direction: row !important; /* Kesinlikle yan yana */
+    align-items: center !important; /* Dikeyde ortala */
+    padding: 15px 10px !important;
+}
+
+/* Saat Kutusu: Genişliği asla değişmez, tapulu alan */
 .time-box {
-    min-width: 95px !important; /* Genişlik en az bu kadar olsun */
-    width: 95px !important;     /* Sabit genişlik */
-    flex-shrink: 0 !important;  /* Asla sıkışma, küçülme */
+    flex: 0 0 90px !important; /* Genişliği 90px'e kitle, esneme payı 0 */
+    width: 90px !important;
+    min-width: 90px !important; /* Ne olursa olsun 90px kal */
+    max-width: 90px !important;
+    border-right: 1px solid rgba(0,0,0,0.1); /* Ayıraç çizgisi */
+    margin-right: 10px !important; /* Sağdaki yazıyla mesafe */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 10px;        /* Çizgiyle araya mesafe */
-    border-right: 1px solid rgba(0,0,0,0.1); /* Ayrım çizgisi */
 }
 
-/* Mobilde yazıların ortalanması için */
+/* --- 🛑 SAAT KUTUSU FİNAL (BOYDAN BOYA UZAMA) --- */
+
+/* 1. KART AYARI: İçindekileri Eşit Boyda Uzat (Stretch) */
+.match-card {
+    display: flex !important;
+    flex-direction: row !important; 
+    align-items: stretch !important; /* 🔥 İŞTE SİHİRLİ KOD BU! (Center yerine Stretch) */
+    padding: 0 !important; /* İç boşluğu sıfırla, kutular kenara değsin */
+    overflow: hidden; /* Köşeler taşmasın */
+}
+
+/* 2. SAAT KUTUSU (Sol Taraf) */
+.time-box {
+    flex: 0 0 95px !important; /* Genişlik sabit */
+    width: 95px !important;
+    background-color: rgba(0,0,0,0.02); /* Çok hafif gri bir zemin (isteğe bağlı) */
+    border-right: 1px solid rgba(0,0,0,0.1); /* Boydan boya çizgi */
+    
+    /* İçindeki yazıları ortalamak için */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Yazıyı dikey ortala */
+    align-items: center;     /* Yazıyı yatay ortala */
+    padding: 15px 5px;       /* İçeriden biraz boşluk ver */
+}
+
+/* 3. MAÇ BİLGİLERİ (Sağ Taraf) */
+.match-info {
+    flex: 1 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* İçeriği dikey ortala */
+    padding: 15px; /* Takım isimlerine boşluk ver */
+}
+
+/* --- MOBİL AYARLAR (Telefonda Bozulmasın) --- */
 @media (max-width: 768px) {
     .match-card {
-        display: flex;
-        flex-direction: row; /* Yan yana durmaya zorla */
-        align-items: center; /* Dikeyde ortala */
+        padding: 0 !important; /* Mobilde de kenara yapışsın */
     }
     
-    .match-info {
-        padding-left: 15px; /* Saat kutusuyla takım arasına boşluk */
+    .time-box {
+        flex: 0 0 85px !important; /* Mobilde bir tık daralabilir */
+        width: 85px !important;
+        padding: 10px 2px;
+    }
+    
+    .date-numeric {
+        font-size: 13px !important;
+        text-align: center;
+    }
+    
+    .day {
+        font-size: 11px !important;
     }
 }
